@@ -39,8 +39,8 @@ jobs:
         zip -r term.zip DerivedData
         
     - name: Upload IPA
-        uses: actions/upload-artifact@v3.1.0
-        with:
-          name: out
-          path: ${{ github.workspace }}/term.zip
+      uses: actions/upload-artifact@v3.1.0
+      with:
+        name: out
+        path: ${{ github.workspace }}/term.zip
         
